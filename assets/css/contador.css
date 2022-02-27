@@ -26,12 +26,13 @@ nav button {
     justify-content: center;
     height: 100%;
     width: 10%;
+    border: none;
     border-radius: 50px;
     padding: 10px 5px;
     background-color: #00FF13;
     color: #000;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
 }
 
@@ -54,6 +55,12 @@ main h1 {
     width: 100%;
     justify-content: space-evenly;
     margin: 15rem auto;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .group h3 {
@@ -85,4 +92,34 @@ footer p {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     margin: .75rem;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav h2 {
+        font-weight: 500;
+    }
+
+    nav button {
+        font-size: 1rem;
+        padding: 5px;
+        width: 50%;
+    }
+
+    main h1 {
+        font-size: 3rem;
+    }
+
+    .groups {
+        flex-direction: column;
+        align-items: center;
+        margin: 5rem auto;
+    }
+
+    .group h3 {
+        font-size: 5rem;
+    }
 }

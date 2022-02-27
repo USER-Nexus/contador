@@ -40,12 +40,6 @@ input {
     width: 20rem;
 }
 
-input[type="date"]::-webkit-inner-spin-button,
-input[type="date"]::-webkit-calendar-picker-indicator {
-    display: none;
-    -webkit-appearance: none;
-}
-
 main button {
     background-color: #00FF13;
     font-family: 'Roboto', sans-serif;
@@ -75,4 +69,15 @@ footer p {
     color: #fff;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    input {
+        width: 10rem;
+    }
+
+    main button {
+        padding: 5px 30px;
+        width: 10rem;
+    }
 }
