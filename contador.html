@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contador</title>
@@ -12,26 +12,26 @@
 <body>
     <nav>
         <h2>Contador</h2>
-        <a href="index.html">Reiniciar</a>
+        <button onclick="reiniciar()">Reiniciar</button>
     </nav>
     <main>
         <h1>Faltam</h1>
         <div class="groups">
             <div class="group">
-                <h3 class="days">00</h3>
-                <p>Dias</p>
+                <h3 id="days">00</h3>
+                <span>Dias</span>
             </div>
             <div class="group">
-                <h3 class="hours">00</h3>
-                <p>Horas</p>
+                <h3 id="hours">00</h3>
+                <span>Horas</span>
             </div>
             <div class="group">
-                <h3 class="mins">00</h3>
-                <p>Minutos</p>
+                <h3 id="mins">00</h3>
+                <span>Minutos</span>
             </div>
             <div class="group">
-                <h3 class="secs">00</h3>
-                <p>Segundos</p>
+                <h3 id="secs">00</h3>
+                <span>Segundos</span>
             </div>
         </div>
     </main>
@@ -40,5 +40,10 @@
         <a href="https://github.com/USER-Nexus" class="icon" target="_blank" rel="noopener noreferrer"><img src="assets/img/github.svg"></a>
     </footer>
     <script src="assets/js/main.js"></script>
+    <script>
+        window.onload = () => {
+            contador()
+        }
+    </script>
 </body>
 </html>

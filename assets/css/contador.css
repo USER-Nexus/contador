@@ -20,7 +20,7 @@ nav h2 {
     margin: 1rem;
 }
 
-nav a {
+nav button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,7 +64,7 @@ main h1 {
     margin: 1rem;
 }
 
-.group p {
+.group span {
     color: #00FF13;
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
